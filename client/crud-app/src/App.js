@@ -12,7 +12,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
-          <Route path="/create" element={<FormPage/>}></Route>
+          <Route path="/add" element={<FormPage/>}></Route>
         </Routes>
         <Footer/>
       </Router>

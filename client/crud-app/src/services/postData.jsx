@@ -1,11 +1,12 @@
-import axios from "axios"
+import axios from "axios";
 
-export const addData=async(data)=>{
-
-const URL="http://localhost:5000/"
-    try {
-      await  axios.get(`${URL}/add`,data)
-    } catch (error) {
-        console.log("Unknown error is occured")
-    }
-}
+export const addData = async (data) => {
+  const URL = "http://localhost:5000";
+  
+  try {
+    
+    return await axios.post(`${URL}/add`, { params: data });
+  } catch (error) {
+    console.error("Unknown error occurred", error);
+  }
+};

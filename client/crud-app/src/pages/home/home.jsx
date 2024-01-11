@@ -12,7 +12,7 @@ const Home = () => {
                             <h1 className='fw-bold display-4 text-primary'>Welcome to the CRUD_APPLICATION</h1>
 
                             <p className='fs-5 '>You can add delete edit or Read your employess over here</p>
-                            <NavLink to={"/create"}>
+                            <NavLink to={"/add"}>
                             <button className='btn btn-primary btn-lg my-5'>Add Employee</button>
                             </NavLink>
                         </div>
